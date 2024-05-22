@@ -10,6 +10,7 @@ function consultaCEP(cep) {
 
         if (padraoCep.test(cep)) {
 
+            // READONLY -----------------------------------------------------------------
             document.querySelector("#bairro").setAttribute("readonly", "")
             document.querySelector("#cidade").setAttribute("readonly", "")
             document.querySelector("#uf").setAttribute("readonly", "")
@@ -34,6 +35,12 @@ function consultaCEP(cep) {
                 }else {
                     limpaForm();
                     window.alert("Cep não localizado")
+
+                    document.querySelector("#bairro").removeAttribute("readonly")
+                    document.querySelector("#cidade").removeAttribute("readonly")
+                    document.querySelector("#uf").removeAttribute("readonly")
+
+                    document.querySelector("#logradouro").focus();
                 }
             });
             //Fecha o if 
@@ -52,10 +59,32 @@ function consultaCEP(cep) {
 
 function limpaForm() {
     
-    document.querySelectorAll("input:not(:first-of-type)").forEach(input => {
+    document.querySelectorAll("input:not(#cep)").forEach(input => {
         input.value = "";
     })
     
+}
+
+// RUA ------------------------------------------------------------------------------------------------------------------
+
+function cepPorRua(uf,localidade,logradouro) {
+    
+        const requisicao = new Request(`https://viacep.com.br/ws/${uf}/${localidade}/${logradouro}/json`, {
+            "method": "GET", 
+            "headers": {
+            "Content-type": "application/json" 
+            }
+        });
+
+        fetch(requisicao)
+                .then(resposta => resposta.json())
+                .then(resposta =>{
+
+            document.querySelector("#bairro").value = resposta.bairro;
+            document.querySelector("#cidade").value = resposta.localidade;
+            document.querySelector("#uf").value = resposta.uf;
+            
+    })
 }
 
 
