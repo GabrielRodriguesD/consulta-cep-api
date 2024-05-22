@@ -31,7 +31,7 @@ form{
     display: flex;
     flex-direction: column;
 
-
+    
 
     width: 400px;
     height: 350px;
@@ -56,7 +56,18 @@ form:first-child>div>img{
 
 }
 
-svg{
-    color: red;
+
+
+
+.lupa-circulo{
+    border: solid 8px darkblue;
+    border-radius: 50%;
+
+    height: 100px;
+    width: 100px;
 }
 
+
+button{
+    height: 20px;
+}
