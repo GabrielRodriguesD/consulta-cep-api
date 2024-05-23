@@ -67,24 +67,28 @@ function limpaForm() {
 
 // RUA ------------------------------------------------------------------------------------------------------------------
 
-function cepPorRua(uf,localidade,logradouro) {
+function cepPorRua(logradouro) {
     
-        const requisicao = new Request(`https://viacep.com.br/ws/${uf}/${localidade}/${logradouro}/json`, {
+        const requisicao = new Request(`https://viacep.com.br/ws/${logradouro}/json`, {
             "method": "GET", 
             "headers": {
             "Content-type": "application/json" 
             }
         });
 
+        
+
         fetch(requisicao)
                 .then(resposta => resposta.json())
                 .then(resposta =>{
+            
 
+            document.querySelector("#cep").value = resposta.cep;
             document.querySelector("#bairro").value = resposta.bairro;
             document.querySelector("#cidade").value = resposta.localidade;
             document.querySelector("#uf").value = resposta.uf;
             
-    })
+    });
 }
 
 
