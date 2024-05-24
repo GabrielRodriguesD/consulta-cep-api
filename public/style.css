@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/assets/mapVector.jpg");
+
+    /* max-width: 300px;
+    margin: 0 auto; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 0 0 ;
+    background-color: rgb(97, 147, 188);
+    border-radius: 30px;
+    width: 450px;
+}
+
+form{
+    background-color: rgb(255, 196, 0);
+
+    /* background-image: url("/assets/world.png");
+    background-size: cover; */
+
+    display: flex;
+    flex-direction: column;
+
+    
+
+    width: 400px;
+    height: 350px;
+    border: solid 2px darkolivegreen;
+
+    margin: 40px 0 0 0;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+form:first-child>div>img{
+    height: 20px;
+    width: 20px;
+}
+
+.controle-form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+    gap: 10px;
+
+}
+
+
+/*FORMAS*/
+
+.lupa-circulo{
+
+    border: solid 8px darkblue;
+    border-radius: 50%;
+
+    height: 100px;
+    width: 100px; 
+}
+
+
+.lupa-cabo{
+    border: 2px black;
+    /* border: solid 8px rgb(0, 139, 19); */
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+
+    height: 100px;
+    width: 10px;
+
+}
+
+.secFormas{
+    border: 4px black;
+    background-color: brown;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-0.70turn);
+}
+
+/* comandos dia 24/5*/
+
+
+
+
+
+
