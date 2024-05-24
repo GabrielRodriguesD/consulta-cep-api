@@ -31,6 +31,38 @@
       "bairro": "Ipiranga",
       "cidade": "São Paulo",
       "uf": "SP"
+    },
+    {
+      "id": "5ef3",
+      "cep": "09931571",
+      "logradouro": "Rua das Orquídeas",
+      "bairro": "Assunção",
+      "cidade": "São Bernardo do Campo",
+      "uf": "SP"
+    },
+    {
+      "id": "7209",
+      "cep": "09931571",
+      "logradouro": "Rua das Orquídeas",
+      "bairro": "Assunção",
+      "cidade": "São Bernardo do Campo",
+      "uf": "SP"
+    },
+    {
+      "id": "75db",
+      "cep": "09931570",
+      "logradouro": "Rua das Orquídeas",
+      "bairro": "Assunção",
+      "cidade": "São Bernardo do Campo",
+      "uf": "SP"
+    },
+    {
+      "id": "df9d",
+      "cep": "09931570",
+      "logradouro": "Rua das Orquídeas",
+      "bairro": "Assunção",
+      "cidade": "São Bernardo do Campo",
+      "uf": "SP"
     }
   ]
 }
