@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs/>
+  <rect x="73.446" y="338.575" width="38" height="250" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.719033, 0.694976, -0.694972, 0.719037, 19.873149, -77.761547)"/>
+  <path d="M 319.81 174.185 m -180.19 0 a 180.19 174.185 0 1 0 360.38 0 a 180.19 174.185 0 1 0 -360.38 0 Z M 319.81 174.185 m -162.171 0 a 162.171 156.767 0 0 1 324.342 0 a 162.171 156.767 0 0 1 -324.342 0 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" bx:shape="ring 319.81 174.185 162.171 156.767 180.19 174.185 1@8b22d59f"/>
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="322.328" cy="85.858" rx="35" ry="35"/>
+</svg>
